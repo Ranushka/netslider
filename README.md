@@ -27,10 +27,15 @@ HTML markup is
 
 JAVASCRIPT is
 -------------
-$(function () {
+<script>
+    
+
+    $(function () {
         $( "#sample" ).netSlider();
     })
 
+</script>
+
 
 ----------------------------------------------
-happy using be ALERT FOR NEW UPDATES
+happy using, & be ALERT FOR NEW UPDATES
