@@ -9,7 +9,7 @@
         // to make full width slider
         // display only active slider
         */
-        this.prepend('<style type="text/css">.slides li{list-style:none;display:none;}.slides li img{width:100%;}.slides .active{display: block;}</style>')
+        this.prepend('<style type="text/css">.slides li{list-style:none;display:none;}.slides li img{width:100%;}.slides li:first-child{display: block;}</style>')
 
 
         /*
@@ -22,8 +22,6 @@
         */
         this.addClass('slider_wraper')
         this.find('ul').addClass('slides')
-        this.find('ul').append('slides')
-        this.find('ul li:first-child').addClass('active')
         this.prepend('<a href="" class="next"><h1>></h1></a><a href="" class="previous"><h1><</h1></a>')
 
 
@@ -83,15 +81,7 @@
         // takes to the next [">" (.next)] slider
         */
         function next_slide () {
-            if($('.slides').find('li.active').is(':last-child')){
-
-                $('.slides').find('li:last-child').removeClass('active')
-                $('.slides').find('li:first-child').addClass('active')
-            }
-            else{
-                $('.slides').find('li.active').removeClass('active').next().addClass('active')
-            }
-            // auto_play ()
+            $('.slides li:first-child').appendTo('.slides');
         }
         // end function next_slide
 
@@ -100,15 +90,7 @@
         // takes to the prevous ["<" (.prevous)] slider
         */
         function prevous_slide () {
-            if($('.slides').find('li.active').is(':first-child')){
-
-                $('.slides').find(':first-child').removeClass('active')
-                $('.slides').find('li:last-child').addClass('active')
-            }
-            else{
-                $('.slides').find('li.active').removeClass('active').prev().addClass('active')
-            }
-            auto_play ()
+            $('.slides li:last-child').prependTo('.slides');
         }
         // function next_slide
         
