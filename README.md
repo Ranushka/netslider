@@ -14,16 +14,20 @@ to use this slider
 
 HTML markup is
 --------------
-<div id="sample" >
-    <ul>
-        <li><img src="img/1.jpg" alt=""></li>
-        <li><img src="img/2.jpg" alt=""></li>
-        <li><img src="img/3.jpg" alt=""></li>
-        <li><img src="img/4.jpg" alt=""></li>
-        <li><img src="img/5.jpg" alt=""></li>
-    </ul>
-</div>
 
+```html
+<pre>
+    <div id="sample" >
+        <ul>
+            <li><img src="img/1.jpg" alt=""></li>
+            <li><img src="img/2.jpg" alt=""></li>
+            <li><img src="img/3.jpg" alt=""></li>
+            <li><img src="img/4.jpg" alt=""></li>
+            <li><img src="img/5.jpg" alt=""></li>
+        </ul>
+    </div>
+</pre>
+```
 
 JAVASCRIPT is
 -------------
