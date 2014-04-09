@@ -14,7 +14,6 @@ to use this slider
 
 HTML markup is
 --------------
-
 ```html
 <div id="sample" >
     <ul>
@@ -29,11 +28,13 @@ HTML markup is
 
 JAVASCRIPT is
 -------------
-
-$(function () {
-    $( "#sample" ).netSlider();
-})
-
+```html
+<script>
+    $(function () {
+        $( "#sample" ).netSlider();
+    })
+</script>
+```
 
 
 ----------------------------------------------
