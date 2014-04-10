@@ -29,11 +29,14 @@
 	<body>
 
 
-<h3>slider</h3>
+<h1>NETSLIDER</h1>
 
 
 
 <style type="text/css">
+
+
+
 
     .previous,.next{
         font-size: 60px;
@@ -41,7 +44,8 @@
         text-decoration: none;
         display: inline-block;
         position: absolute;
-        z-index: 1;
+        z-index: 20;
+        /*background: rgba(255, 255, 255, 0.64);*/
     }
     .next{
         right: 0;
@@ -49,10 +53,31 @@
     body{
         overflow-x: hidden;
     }
+
+
+    h1{
+        right: 0;
+        font-size: 55px;
+        position: absolute;
+        margin: 120px auto;
+        left: 0;
+        text-align: center;
+        color: #fff;
+        z-index: 10;
+    }
     
 </style>
 
 <div id="sample" >
+
+
+<a href="" class="next">
+<img src="img/nex.svg" alt="">
+
+</svg>
+
+</a>
+<a href="" class="previous"><img src="img/prv.svg" alt=""></a>
     <ul>
         <li><img src="img/1.jpg" alt=""></li>
         <li><img src="img/2.jpg" alt=""></li>
@@ -62,7 +87,7 @@
     </ul>
 </div>
 
-<h2>dhkashdkas</h2>
+
 
 
 <select class="input input--dropdown js--animations">
@@ -207,17 +232,12 @@ $( "#sample" ).netSlider({
 
     $(function () {
 
-
-
-$( "#sample" ).netSlider({
-    slide_next_in: "animated bounceInLeft",
-    slide_next_out: "animated bounceOutRight",
-    slide_pre_in: "animated bounceInRight",
-    slide_pre_out: "animated bounceOutLeft"
-});
-
-
-
+        $( "#sample" ).netSlider({
+            slide_next_in: "animated fadeInLeft",
+            slide_next_out: "animated fadeOutRight",
+            slide_pre_in: "animated fadeInRight",
+            slide_pre_out: "animated fadeOutLeft"
+        });
 
     })
 </script>

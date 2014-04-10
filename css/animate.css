@@ -20,7 +20,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-fill-mode: both;
 }
 
-.animated.infinite {
+/*.animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
@@ -97,7 +97,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-name: flash;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
 
 @-webkit-keyframes pulse {
   0% {
@@ -378,7 +378,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-name: tada;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @-webkit-keyframes wobble {
   0% {
@@ -1088,6 +1087,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -webkit-animation-name: fadeInDownBig;
   animation-name: fadeInDownBig;
 }
+*/
 
 @-webkit-keyframes fadeInLeft {
   0% {
@@ -1124,6 +1124,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-name: fadeInLeft;
 }
 
+/*
 @-webkit-keyframes fadeInLeftBig {
   0% {
     opacity: 0;
@@ -1159,6 +1160,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-name: fadeInLeftBig;
 }
 
+*/
+
 @-webkit-keyframes fadeInRight {
   0% {
     opacity: 0;
@@ -1193,6 +1196,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
+
+
+/*
 
 @-webkit-keyframes fadeInRightBig {
   0% {
@@ -1393,6 +1399,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -webkit-animation-name: fadeOutDownBig;
   animation-name: fadeOutDownBig;
 }
+*/
+
 
 @-webkit-keyframes fadeOutLeft {
   0% {
@@ -1429,6 +1437,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-name: fadeOutLeft;
 }
 
+
+/*
 @-webkit-keyframes fadeOutLeftBig {
   0% {
     opacity: 1;
@@ -1463,6 +1473,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -webkit-animation-name: fadeOutLeftBig;
   animation-name: fadeOutLeftBig;
 }
+*/
+
 
 @-webkit-keyframes fadeOutRight {
   0% {
@@ -1498,6 +1510,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -webkit-animation-name: fadeOutRight;
   animation-name: fadeOutRight;
 }
+
+/*
 
 @-webkit-keyframes fadeOutRightBig {
   0% {
@@ -2805,7 +2819,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-name: hinge;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @-webkit-keyframes rollIn {
   0% {
@@ -2842,7 +2855,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-name: rollIn;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @-webkit-keyframes rollOut {
   0% {
@@ -2877,4 +2889,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .rollOut {
   -webkit-animation-name: rollOut;
   animation-name: rollOut;
-}
+}*/

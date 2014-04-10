@@ -1,21 +1,20 @@
 (function ( $ ) {
 
      $.fn.netSlider = function( options ) {
-        
 
-
-// ---------------------------------------------
-
-
+/*----
+plugin default options
+----*/
+        /*
+        // default plugin settings
+        // accept if usr defined a setting -> options
+        */
         var settings = $.extend({
-            // These are the defaults.
             slide_next_in: "animated rollIn",
             slide_next_out: "animated rollOut",
             slide_pre_in: "animated rollIn",
             slide_pre_out: "animated rollOut"
         }, options );
-
-
 
 
 
@@ -33,21 +32,17 @@
         // 
         // -> add .slider_wraper to <div>
         // -> add .slides to <ul>
-        // -> add .active to the first <li> child of <ul>
         // -> add slider controllers " < ", " > "
         */
         this.addClass('slider_wraper')
         this.find('ul').addClass('slides')
-        // this.find('ul li').addClass(settings.slide_out)// user prefferd effict
-        this.prepend('<a href="" class="next"><h1>></h1></a><a href="" class="previous"><h1><</h1></a>')
+        // this.prepend('<a href="" class="next"><h2>></h2></a><a href="" class="previous"><h2><</h2></a>')
 
 
 
-        /*----
-        Event listeners
-        ----*/
-
-
+/*----
+Event listeners
+----*/
         /*
         // listen to the ">" (.next) click
         // call function next_slide()
@@ -55,8 +50,6 @@
         $(document).on('click', '.next', function (e) {
             e.preventDefault()
             next_slide()
-            // clearInterval(autoSlide);
-            // setInterval(function(){next_slide ()}, 5000);
         })
 
 
@@ -67,48 +60,37 @@
         $(document).on('click', '.previous', function (e) {
             e.preventDefault()
             prevous_slide()
-            // clearInterval(autoSlide);
-            // setInterval(function(){prevous_slide ()}, 5000);
         })
 
-        /*
-        // Init the auto play 
-        // TODO // not functional well
-        */
-        // auto_play()
 
 
-        // setInterval(function(){next_slide ()}, 5000);
-
-        /*----
-        Functions
-        ----*/
-
-        /*
-        // to make auto play the slider
-        // TODO // not functional well
-        */
-        // function auto_play () {
-        //     next_slide () 
-        //     // clearInterval(autoSlide);
-        //     // var autoSlide = setInterval(next_slide , 5000);
-        // }
-
-
+/*----
+Functions
+----*/
         /*
         // takes to the next [">" (.next)] slider
         */
-        
+        // function next_slide () {
+        //     $('.slides li:nth-child(2)').addClass(settings.slide_next_in).one('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(e) {
+        //             $('.slides li').removeClass();
+        //         });
 
-
+        //     $('.slides li:first-child').addClass(settings.slide_next_out).one('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(e) {
+        //         $('.slides li:first-child').appendTo('.slides').removeClass();
+        //     });
+        // }
 
         function next_slide () {
-            $('.slides li:nth-child(2)').addClass(settings.slide_next_in).one('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(e) {
-                    $('.slides li').removeClass();
-                });
             $('.slides li:first-child').addClass(settings.slide_next_out).one('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(e) {
-                $('.slides li:first-child').appendTo('.slides').removeClass();
-            });
+                    $('.slides li:first-child').appendTo('.slides')
+                    $('.slides li:first-child').addClass(settings.slide_next_in).one('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(e) {
+                        $('.slides li').removeClass();
+                    });
+                });
+            
+            // $('.slides li:first-child').addClass(settings.slide_next_out).one('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(e) {
+            //     $('.slides li:first-child').appendTo('.slides').removeClass();
+            // });
         }
         // end function next_slide
 
@@ -124,7 +106,6 @@
             });
         }
         // function next_slide
-        
 
     };
 
