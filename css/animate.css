@@ -1,5 +1,70 @@
 @charset "UTF-8";
 
+form li.focused {
+background-color: rgba(255, 255, 255, 0);
+}
+.noI form li, .altInstruct form li {
+width: auto !important;
+}
+
+input.text, input.search, textarea.textarea{
+	border: 1px solid #c7c7c7;
+	background: #fff;
+	box-shadow: none;
+	padding: 0 15px !important;
+	width: 100%;
+	height: 50px;
+	font-size: 15px;
+	line-height: 43px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+
+select.select{
+background: none!important;
+font: 400 15px/25px Arial, Helvetica, sans-serif!important;
+color: #303030;
+width: 255px!important;
+border: none!important;
+padding: 9px 0!important;
+}
+
+.btTxt .submit{
+	border: none !important;
+	background: #ffc423;
+	font-family: DINOTBold, Arial, Helvetica, sans-serif;
+	font-size: 20px !important;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	width: 100%;
+	color: #303030;
+	float: right;
+	cursor: pointer;
+	text-indent: 0 !important;
+	height: 43px;
+	text-transform: uppercase;
+	display: block;
+}
+
+#saveForm{
+	border: none !important;
+	background: #ffc423;
+	font-family: DINOTBold, Arial, Helvetica, sans-serif;
+	font-size: 20px !important;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	width: 100%;
+	color: #303030;
+	float: right;
+	cursor: pointer;
+	text-indent: 0 !important;
+	height: 43px;
+	text-transform: uppercase;
+	display: block;
+}
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license
